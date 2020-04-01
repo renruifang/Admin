@@ -1,0 +1,34 @@
+<div id="sidebar" class="sidebar py-3">
+    <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">MAIN</div>
+    <ul class="sidebar-menu list-unstyled">
+        <li class="sidebar-list-item"><a href="{:url('index/index')}" class="sidebar-link text-muted active"><i class="o-home-1 mr-3 text-gray"></i><span>首页</span></a></li>
+        <li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-controls="pages" class="sidebar-link text-muted"><i class="o-wireframe-1 mr-3 text-gray"></i><span>管理员</span></a>
+            <div id="pages" class="collapse">
+                <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
+                    <li class="sidebar-list-item"><a href="{:url('admin/administrator')}" class="sidebar-link text-muted pl-lg-5">管理员列表</a></li>
+                    <li class="sidebar-list-item"><a href="{:url('admin/addAdministrator')}" class="sidebar-link text-muted pl-lg-5">添加管理员</a></li>
+                    <li class="sidebar-list-item"><a href="{:url('admin/role')}" class="sidebar-link text-muted pl-lg-5">角色列表</a></li>
+                    <li class="sidebar-list-item"><a href="{:url('admin/addRole')}" class="sidebar-link text-muted pl-lg-5">添加角色</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#pages1" aria-expanded="false" aria-controls="pages" class="sidebar-link text-muted"><i class="o-wireframe-1 mr-3 text-gray"></i><span>电脑</span></a>
+            <div id="pages1" class="collapse">
+                <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
+                    <li class="sidebar-list-item"><a href="{:url('computer/computer')}" class="sidebar-link text-muted pl-lg-5">电脑列表</a></li>
+                    <li class="sidebar-list-item"><a href="{:url('computer/addComputer')}" class="sidebar-link text-muted pl-lg-5">添加电脑</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#pages2" aria-expanded="false" aria-controls="pages" class="sidebar-link text-muted"><i class="o-wireframe-1 mr-3 text-gray"></i><span>图书</span></a>
+            <div id="pages2" class="collapse">
+                <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
+                    <li class="sidebar-list-item"><a href="{:url('book/book')}" class="sidebar-link text-muted pl-lg-5">图书列表</a></li>
+                    <li class="sidebar-list-item"><a href="{:url('book/addBook')}" class="sidebar-link text-muted pl-lg-5">添加图书</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="sidebar-list-item"><a href="{:url('login/index')}" class="sidebar-link text-muted"><i class="o-exit-1 mr-3 text-gray"></i><span>Login</span></a></li>
+    </ul>
+
+</div>
