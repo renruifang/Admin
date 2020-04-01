@@ -1,0 +1,329 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:85:"D:\phpStudy\PHPTutorial\WWW\tp51\public/../application/index\view\register\index.html";i:1584925481;}*/ ?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<link href="/static/index/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/static/index/js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="/static/index/css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="New Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--fonts-->
+<link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'><!--//fonts-->
+<!-- start menu -->
+<link href="/static/index/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/static/index/js/memenu.js"></script>
+<script>$(document).ready(function(){$(".memenu").memenu();});</script>
+<script src="/static/index/js/simpleCart.min.js"> </script>
+	<style>
+		#btn{
+			border:0 solid #000;
+			background-color:rgb(239,95,33);
+			width: 184px;
+			height: 46px;
+			color:#fff;
+			font-size:20px;
+		}
+		#btn:hover{
+			background-color:rgb(0,0,0);
+		}
+	</style>
+</head>
+<body>
+<!--header-->
+<div class="header">
+	<div class="header-top">
+		<div class="container">
+			<div class="search">
+					<form>
+						<input type="text" value="Search " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+						<input type="submit" value="Go">
+					</form>
+			</div>
+			<div class="header-left">		
+					<ul>
+						<li ><a class="lock"  href="<?php echo url('Login/index'); ?>"  >Login</a></li>
+						<li><a class="lock" href="<?php echo url('Register/index'); ?>"  >Register</a></li>
+						<li>
+</li>
+
+					</ul>
+
+					<div class="clearfix"> </div>
+			</div>
+				<div class="clearfix"> </div>
+		</div>
+		</div>
+		<div class="container">
+			<div class="head-top">
+				<div class="logo">
+					<a href="index.html"><img src="/static/index/images/logo.png" alt=""></a>
+				</div>
+		  <div class=" h_menu4">
+					<ul class="memenu skyblue">
+					  <li class="active grid"><a class="color8" href="<?php echo url('Book/index'); ?>">Home</a></li>
+				      <li><a class="color1" href="#">Shop</a>
+				      	<div class="mepanel">
+						<div class="row">
+							<div class="col1">
+								<div class="h_nav">
+									<ul>
+										<li><a href="products.html">Accessories</a></li>
+										<li><a href="products.html">Bags</a></li>
+										<li><a href="products.html">Caps & Hats</a></li>
+										<li><a href="products.html">Hoodies & Sweatshirts</a></li>
+										<li><a href="products.html">Jackets & Coats</a></li>
+										<li><a href="products.html">Jeans</a></li>
+										<li><a href="products.html">Jewellery</a></li>
+										<li><a href="products.html">Jumpers & Cardigans</a></li>
+										<li><a href="products.html">Leather Jackets</a></li>
+										<li><a href="products.html">Long Sleeve T-Shirts</a></li>
+										<li><a href="products.html">Loungewear</a></li>
+									</ul>	
+								</div>							
+							</div>
+							<div class="col1">
+								<div class="h_nav">
+									<ul>
+										<li><a href="products.html">Shirts</a></li>
+										<li><a href="products.html">Shoes, Boots & Trainers</a></li>
+										<li><a href="products.html">Shorts</a></li>
+										<li><a href="products.html">Suits & Blazers</a></li>
+										<li><a href="products.html">Sunglasses</a></li>
+										<li><a href="products.html">Sweatpants</a></li>
+										<li><a href="products.html">Swimwear</a></li>
+										<li><a href="products.html">Trousers & Chinos</a></li>
+										<li><a href="products.html">T-Shirts</a></li>
+										<li><a href="products.html">Underwear & Socks</a></li>
+										<li><a href="products.html">Vests</a></li>
+									</ul>	
+								</div>							
+							</div>
+							<div class="col1">
+								<div class="h_nav">
+									<h4>Popular Brands</h4>
+									<ul>
+										<li><a href="products.html">Levis</a></li>
+										<li><a href="products.html">Persol</a></li>
+										<li><a href="products.html">Nike</a></li>
+										<li><a href="products.html">Edwin</a></li>
+										<li><a href="products.html">New Balance</a></li>
+										<li><a href="products.html">Jack & Jones</a></li>
+										<li><a href="products.html">Paul Smith</a></li>
+										<li><a href="products.html">Ray-Ban</a></li>
+										<li><a href="products.html">Wood Wood</a></li>
+									</ul>	
+								</div>												
+							</div>
+						  </div>
+						</div>
+					</li>
+				    <li class="grid"><a class="color2" href="#">	Lookbook</a>
+					  	<div class="mepanel">
+						<div class="row">
+							<div class="col1">
+								<div class="h_nav">
+									<ul>
+										<li><a href="products.html">Accessories</a></li>
+										<li><a href="products.html">Bags</a></li>
+										<li><a href="products.html">Caps & Hats</a></li>
+										<li><a href="products.html">Hoodies & Sweatshirts</a></li>
+										<li><a href="products.html">Jackets & Coats</a></li>
+										<li><a href="products.html">Jeans</a></li>
+										<li><a href="products.html">Jewellery</a></li>
+										<li><a href="products.html">Jumpers & Cardigans</a></li>
+										<li><a href="products.html">Leather Jackets</a></li>
+										<li><a href="products.html">Long Sleeve T-Shirts</a></li>
+										<li><a href="products.html">Loungewear</a></li>
+									</ul>	
+								</div>							
+							</div>
+							<div class="col1">
+								<div class="h_nav">
+									<ul>
+										<li><a href="products.html">Shirts</a></li>
+										<li><a href="products.html">Shoes, Boots & Trainers</a></li>
+										<li><a href="products.html">Shorts</a></li>
+										<li><a href="products.html">Suits & Blazers</a></li>
+										<li><a href="products.html">Sunglasses</a></li>
+										<li><a href="products.html">Sweatpants</a></li>
+										<li><a href="products.html">Swimwear</a></li>
+										<li><a href="products.html">Trousers & Chinos</a></li>
+										<li><a href="products.html">T-Shirts</a></li>
+										<li><a href="products.html">Underwear & Socks</a></li>
+										<li><a href="products.html">Vests</a></li>
+									</ul>	
+								</div>							
+							</div>
+							<div class="col1">
+								<div class="h_nav">
+									<h4>Popular Brands</h4>
+									<ul>
+										<li><a href="products.html">Levis</a></li>
+										<li><a href="products.html">Persol</a></li>
+										<li><a href="products.html">Nike</a></li>
+										<li><a href="products.html">Edwin</a></li>
+										<li><a href="products.html">New Balance</a></li>
+										<li><a href="products.html">Jack & Jones</a></li>
+										<li><a href="products.html">Paul Smith</a></li>
+										<li><a href="products.html">Ray-Ban</a></li>
+										<li><a href="products.html">Wood Wood</a></li>
+									</ul>	
+								</div>												
+							</div>
+						  </div>
+						</div>
+			    </li>
+				<li><a class="color4" href="blog.html">Blog</a></li>				
+				<li><a class="color6" href="contact.html">Conact</a></li>
+			  </ul> 
+			</div>
+				
+				<div class="clearfix"> </div>
+		</div>
+		</div>
+
+	</div>
+
+	
+<!--content-->
+<div class="container">
+		<div class="account">
+		<h1>Register</h1>
+		<div class="account-pass">
+		<div class="col-md-8 account-top">
+
+			<!--表单提交-->
+			<form>
+			<div> 	
+				<span>User</span>
+				<input type="text" name="username" id="username">
+			</div>
+			<div> 
+				<span >Password</span>
+				<input type="password" name="password" id="password">
+			</div>				
+				<input type="button" value="Submit" id="btn">
+			</form>
+		</div>
+
+			<!--右侧图片-->
+		<div class="col-md-4 left-account ">
+			<a href="single.html"><img class="img-responsive " src="/static/index/images/4.jpg" alt=""></a>
+			<div class="clearfix"> </div>
+		</div>
+			<!--右侧图片结尾-->
+
+	<div class="clearfix"> </div>
+	</div>
+	</div>
+
+</div>
+
+<!--//content-->
+<div class="footer">
+				<div class="container">
+			<div class="footer-top-at">
+			
+				<div class="col-md-4 amet-sed">
+				<h4>MORE INFO</h4>
+				<ul class="nav-bottom">
+						<li><a href="#">How to order</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="contact.html">Location</a></li>
+						<li><a href="#">Shipping</a></li>
+						<li><a href="#">Membership</a></li>	
+					</ul>	
+				</div>
+				<div class="col-md-4 amet-sed ">
+				<h4>CONTACT US</h4>
+				
+					<p>
+Contrary to popular belief</p>
+					<p>The standard chunk</p>
+					<p>office:  +12 34 995 0792</p>
+					<ul class="social">
+						<li><a href="#"><i> </i></a></li>						
+						<li><a href="#"><i class="twitter"> </i></a></li>
+						<li><a href="#"><i class="rss"> </i></a></li>
+						<li><a href="#"><i class="gmail"> </i></a></li>
+						
+					</ul>
+				</div>
+				<div class="col-md-4 amet-sed">
+					<h4>Newsletter</h4>
+					<p>Sign Up to get all news update
+and promo</p>
+					<form>
+						<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+						<input type="submit" value="Sign up">
+					</form>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="footer-class">
+		<p >Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+		</div>
+		</div>
+
+<!--实现登录-->
+<script src="/static/index/js/jquery.min.js"></script>
+<script src="/static/index/js/layer/skin/layer.css"></script>
+<script src="/static/index/js/layer/layer.js"></script>
+
+<script>
+
+	$("#btn").click(function(){
+	    var username=$.trim($("#username").val());
+	    var password=$.trim($("#password").val());
+	    var str='';
+	    var num=0;
+	    if(username==''){
+	        str=str+'用户名不能为空';
+	        num=num+1;
+		}
+		if(password==''){
+	        str=str+'密码不能为空';
+	        num=num+1;
+		}
+        if(num>0){
+            layer.msg(str,{
+                title:'错误提示信息',
+                icon:5
+            });
+            return;//若用户名、密码为空，不再执行
+        }
+        // 都不为空时，利用ajax传值
+        $.ajax({
+            url:"<?php echo url('Register/add'); ?>",
+            type:'post',
+            data:{
+                username:username,
+                password:password
+            },
+            // dataType:'json',
+            success:function(res){
+                if(res.status==1){
+                    window.location.href="<?php echo url('Login/index'); ?>";
+                }else{
+                    layer.msg(res.msg,{
+                        title:'错误提示信息',
+                        icon:5
+                    })
+                }
+            }
+        });
+	})
+</script>
+</body>
+</html>
+			

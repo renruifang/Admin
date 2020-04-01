@@ -1,0 +1,65 @@
+<!--左侧导航-->
+<!-- START PAGE SIDEBAR -->
+<div class="page-sidebar">
+    <!-- START X-NAVIGATION -->
+    <ul class="x-navigation">
+        <li class="xn-profile">
+            <a href="#" class="profile-mini">
+                <img src="__STATIC__/assets/images/users/avatar.jpg" alt="John Doe"/>
+            </a>
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="__STATIC__/assets/images/users/avatar.jpg" alt="John Doe"/>   <!--登录者头像-->
+                </div>
+                <div class="profile-data">
+                    <div class="profile-data-name">Admin</div>   <!--管理员名称-->
+                </div>
+                <!--左右两侧小图标-->
+                <!--<div class="profile-controls">-->
+                <!--<a href="pages-profile.html" class="profile-control-left"><span class="fa fa-info"></span></a>-->
+                <!--<a href="pages-messages.html" class="profile-control-right"><span class="fa fa-envelope"></span></a>-->
+                <!--</div>-->
+            </div>
+        </li>
+        <li class="xn-title">Navigation</li>
+        <li class="active">
+            <a href="{:url('Index/index')}"><span class="fa fa-desktop"></span> <span class="xn-text">首页</span></a>
+        </li>
+        <li class="xn-openable">
+            <a href="#"><span class="fa fa-file-text-o"></span> <span class="xn-text">管理权限</span></a>
+            <ul>
+                <li><a href="{:url('Rbac/administrator')}">管理员列表</a></li>
+                <li><a href="{:url('Rbac/addAdministrator')}">添加管理员</a></li>
+                <li><a href="{:url('Rbac/role')}">角色列表</a></li>
+                <li><a href="{:url('Rbac/addRole')}">添加角色</a></li>
+                <li><a href="{:url('Rbac/rule')}">规则列表</a></li>
+                <li><a href="{:url('Rbac/addRule')}">添加规则</a></li>
+            </ul>
+        </li>
+        <li class="xn-openable">
+            <a href="#"><span class="fa fa-file-text-o"></span> <span class="xn-text">分类管理</span></a>
+            <ul>
+                <li><a href="{:url('Category/index')}">分类列表</a></li>
+                <li><a href="{:url('Category/add')}">添加分类</a></li>
+            </ul>
+        </li>
+        <li class="xn-openable">
+            <a href="#"><span class="fa fa-file-text-o"></span> <span class="xn-text">书籍管理</span></a>
+            <ul>
+                <li><a href="{:url('Book/index')}">书籍列表</a></li>
+                <li><a href="{:url('Book/add')}">添加书籍</a></li>
+            </ul>
+        </li>
+        <li class="xn-openable">
+            <a href="#"><span class="fa fa-file-text-o"></span> <span class="xn-text">轮播图管理</span></a>
+            <ul>
+                <li><a href="{:url('Lunbo/index')}">轮播图列表</a></li>
+                <li><a href="{:url('Lunbo/add')}">添加轮播图</a></li>
+            </ul>
+        </li>
+        <li class="xn-title">Components</li>
+    </ul>
+    <!-- END X-NAVIGATION -->
+</div>
+<!-- END PAGE SIDEBAR -->
+<!--左侧导航结尾部分-->

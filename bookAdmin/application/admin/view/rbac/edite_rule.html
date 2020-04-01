@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <!-- META SECTION -->
+        <title>Atlant - Responsive Bootstrap Admin Template</title>            
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link rel="icon" href="__STATIC__/favicon.ico" type="image/x-icon" />
+        <!-- END META SECTION -->
+                        
+        <!-- CSS INCLUDE -->        
+        <link rel="stylesheet" type="text/css" id="theme" href="__STATIC__/css/theme-default.css"/>
+        <!-- EOF CSS INCLUDE -->
+        <style>
+            .btn{
+                margin-right:325px;
+            }
+            .page-content{
+                height: 750px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- START PAGE CONTAINER -->
+        <div class="page-container">
+            
+          <!--左侧导航-->
+            {include file="common/left" /}
+            <!--左侧导航结尾-->
+            <!-- PAGE CONTENT -->
+            <div class="page-content">
+                
+                <!--头部导航-->
+                {include file="common/top" /}
+                <!--头部导航结尾-->
+                
+                <!-- START BREADCRUMB -->
+                <ul class="breadcrumb">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">权限管理</a></li>
+                    <li class="active">更新规则</li>
+                </ul>
+                <!-- END BREADCRUMB -->
+                
+                <!-- PAGE CONTENT WRAPPER -->
+                <div class="page-content-wrap">
+                
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+                            <form class="form-horizontal" action="{:url('Rbac/editeRule')}" method="post">
+                            <div class="panel panel-default">
+                                <input type="hidden" name="id" value="{$arr.id}">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><strong>更新规则</strong></h3>
+                                </div>
+
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <label class="col-md-3 col-xs-12 control-label">规则英文名</label>
+                                        <div class="col-md-6 col-xs-12">
+                                            <input type="text" class="form-control" name="name" value="{$arr.name}"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 col-xs-12 control-label">规则中文名</label>
+                                        <div class="col-md-6 col-xs-12">
+                                                <input type="text" class="form-control" name="title" value="{$arr.title}"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 col-xs-12 control-label">是否启用</label>
+                                        <div class="col-md-6 col-xs-12">
+                                             <select class="form-control select" name="status">
+                                                 {if condition="$arr.status==1"}
+                                                 <option value="1" selected>启用</option>
+                                                 <option value="0">禁用</option>
+                                                 {else/}
+                                                 <option value="1">启用</option>
+                                                 <option value="0" selected>禁用</option>
+                                                 {/if}
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 col-xs-12 control-label">导航栏是否显示</label>
+                                        <div class="col-md-6 col-xs-12">
+                                            <select class="form-control select" name="is_show">
+                                                {if condition="$arr.is_show==1"}
+                                                <option value="1" selected>显示</option>
+                                                <option value="0">不显示</option>
+                                                {else/}
+                                                <option value="1">显示</option>
+                                                <option value="0" selected>不显示</option>
+                                                {/if}
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 col-xs-12 control-label">规则描述</label>
+                                        <div class="col-md-6 col-xs-12">
+                                                <input type="text" class="form-control" name="remark" value="{$arr.remark}"/>
+
+
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">                                        
+                                        <label class="col-md-3 col-xs-12 control-label">排序</label>
+                                        <div class="col-md-6 col-xs-12">
+                                                <input type="text" class="form-control" name="sort" value="{$arr.sort}"/>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="panel-footer">
+                                    <button class="btn btn-primary pull-right">更新</button>
+                                </div>
+                            </div>
+                            </form>
+                            
+                        </div>
+                    </div>                    
+                    
+                </div>
+                <!-- END PAGE CONTENT WRAPPER -->                                                
+            </div>            
+            <!-- END PAGE CONTENT -->
+        </div>
+        <!-- END PAGE CONTAINER -->
+        
+        <!-- MESSAGE BOX-->
+        <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+            <div class="mb-container">
+                <div class="mb-middle">
+                    <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
+                    <div class="mb-content">
+                        <p>Are you sure you want to log out?</p>                    
+                        <p>Press No if youwant to continue work. Press Yes to logout current user.</p>
+                    </div>
+                    <div class="mb-footer">
+                        <div class="pull-right">
+                            <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
+                            <button class="btn btn-default btn-lg mb-control-close">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MESSAGE BOX-->
+
+        <!-- START PRELOADS -->
+        <audio id="audio-alert" src="__STATIC__/audio/alert.mp3" preload="auto"></audio>
+        <audio id="audio-fail" src="__STATIC__/audio/fail.mp3" preload="auto"></audio>
+        <!-- END PRELOADS -->             
+        
+    <!-- START SCRIPTS -->
+        <!-- START PLUGINS -->
+        <script type="text/javascript" src="__STATIC__/js/plugins/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="__STATIC__/js/plugins/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="__STATIC__/js/plugins/bootstrap/bootstrap.min.js"></script>
+        <!-- END PLUGINS -->
+        
+        <!-- THIS PAGE PLUGINS -->
+        <script type='text/javascript' src='__STATIC__/js/plugins/icheck/icheck.min.js'></script>
+        <script type="text/javascript" src="__STATIC__/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+        
+        <script type="text/javascript" src="__STATIC__/js/plugins/bootstrap/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="__STATIC__/js/plugins/bootstrap/bootstrap-file-input.js"></script>
+        <script type="text/javascript" src="__STATIC__/js/plugins/bootstrap/bootstrap-select.js"></script>
+        <script type="text/javascript" src="__STATIC__/js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+        <!-- END THIS PAGE PLUGINS -->       
+        
+        <!-- START TEMPLATE -->
+        <script type="text/javascript" src="__STATIC__/js/settings.js"></script>
+        
+        <script type="text/javascript" src="__STATIC__/js/plugins.js"></script>        
+        <script type="text/javascript" src="__STATIC__/js/actions.js"></script>        
+        <!-- END TEMPLATE -->
+    <!-- END SCRIPTS -->                   
+    </body>
+</html>
+
+
+
+
+
+
